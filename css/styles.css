@@ -1,6 +1,13 @@
-/* ===================== */
-/* Reset */
-/* ===================== */
+/* ============ Variables ============ */
+:root {
+	--clr-primary: #be3144;
+	--clr-dark: #181719;
+	--clr-medium: #3a3d40;
+	--clr-secondary: #45567d;
+	--clr-light: #f0f0f0;
+}
+/* ============ Reset ============ */
+
 /* --- Box sizing --- */
 *,
 *::before,
@@ -20,4 +27,76 @@ p,
 figure,
 picture {
 	margin: 0;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+}
+/* ============ Nav ============ */
+.primary-header {
+	position: fixed;
+	width: 100vw;
+	background: var(--clr-primary);
+	padding: 0.7rem;
+	border-bottom: 3px solid var(--clr-dark);
+	z-index: 10;
+}
+
+.nav-bar {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.primary-header li {
+	list-style: none;
+}
+
+.primary-header a {
+	text-decoration: none;
+	color: var(--clr-light);
+}
+
+/* ============ Welcome ============ */
+.welcome-section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	top: 5rem;
+	height: 100vh;
+	background: linear-gradient(60deg, var(--clr-medium) 0%, var(--clr-dark) 65%);
+
+}
+
+.welcome-section h1 {
+	color: var(--clr-light);
+	font-size: 2rem;
+}
+
+.welcome-section p {
+	color: var(--clr-primary);
+}
+
+
+/* ============ Projects ============ */
+.projects-section {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	top: 5rem;
+	text-align: center;
+}
+/* Positioning */
+
+.projects-grid {
+	display: flex;
+	flex-direction: column;
+}
+
+.project-tile
+
+.project-image {
+	width: 90%;
 }
